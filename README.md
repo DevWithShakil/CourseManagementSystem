@@ -25,11 +25,11 @@ A simple Laravel project:
 
 ## Database Tables (PostgreSQL)
 
-| Table       | Fields                    | Notes                                                             |
-| ----------- | ------------------------- | ----------------------------------------------------------------- |
-| courses     | id, name, description     | Course list                                                       |
-| students    | id, name, email           | Students                                                          |
-| enrollments | id, student_id, course_id | Links students and courses, foreign keys with `cascadeOnDelete()` |
+| Table       | Fields                    | Notes                                                               |
+| ----------- | ------------------------- | ------------------------------------------------------------------- |
+| courses     | id, name, description     | Course list                                                         |
+| students    | id, name, email           | Students                                                            |
+| enrollments | id, student_id, course_id | Links students and courses, foreign keys with `onDelete('cascade')` |
 
 ## Notes
 
