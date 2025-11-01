@@ -22,3 +22,7 @@ Route::get('/info', function (Request $request) {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
